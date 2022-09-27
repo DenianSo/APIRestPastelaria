@@ -1,0 +1,29 @@
+### Verbo GET – listar
+GET http://localhost:8000/produto/1 HTTP/1.1
+
+### Verbo POST – adicionar
+POST http://127.0.0.1:8000/produto/ HTTP/1.1
+content-type: application/json
+
+{
+"id" : 1,
+"nome" : "Denian - Pastel de Flango",
+"descricao" : "Um delicioso pastel de flango",
+"foto" : null,
+"valor_unitario" : 12 
+}
+
+### Verbo PUT – atualiza
+PUT http://127.0.0.1:8000/produto/1 HTTP/1.1
+content-type: application/json
+
+{
+"id" : 2,
+"nome" : "Denian - Pastel de Strogonoff",
+"descricao" : "Um delicioso pastel de Strogonoff ao molho pardo",
+"foto" : null,
+"valor_unitario" : 20
+}
+
+### Verbo DELETE - excluir
+DELETE http://127.0.0.1:8000/produto/1 HTTP/1.1
